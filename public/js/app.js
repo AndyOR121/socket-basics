@@ -14,11 +14,12 @@ socket.on('connect', function() {
 
 socket.on('message', function(message) {
 	var momentTimestamp = moment.utc(message.timestamp);
-	var $message = jQuery('.messages');
-	console.log(message.text);
+	var $messages = jQuery('.messages');
+	var $message = jQuery('<li class="list-group-item"></li>');
 
 	$message.append('<p><strong>' + message.name + '</strong>  - ' + momentTimestamp.local().format('MMM Do YYYY, h:mm:ss a') + '</p>');
 	$message.append('<p>' + message.text + '</p>')
+	$messages.append($message);
 });
 
 var $form = jQuery('#message-form');

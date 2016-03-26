@@ -3,18 +3,43 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Piece of Cake Chat</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
-		<h1>It's like.... the prettiest website ever..</h1>
+		<div class="vertical-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 well">
+						<h1>CAKE?</h1>
+						<form action="/chat.html">
+							<div class="form-group">
+								<label>Room:</label>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="glyphicon glyphicon-comment"></i>
+									</span>
+									<input type="text" name="room" class="form-control" value="MainRoom"/>
+								</div>
+							</div>
+						  	<div class="form-group">
+								<label>Display Name:</label>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="glyphicon glyphicon-user"></i>
+									</span>
+									<input type="text" name="name" class="form-control"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-primary btn-block" value="Join Chat Room"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		<form action="/chat.html">
-			<label>Room:</label>
-			<input type="text" name="room" value="MainRoom"/>
-			<p></p>
-			<label>Display Name:</label>
-			<input type="text" name="name"/>
-			<p></p>
-			<input type="submit" value="Join Chat Room"/>
-		</form>
+		
 	</body>
 </html>

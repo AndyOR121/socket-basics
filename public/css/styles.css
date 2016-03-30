@@ -12,3 +12,8 @@ h1 {
 .messages p {
 	margin: 6px 0;
 }
+
+.convo-container {
+    height: 400px;
+    overflow:auto;
+}
